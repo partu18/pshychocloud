@@ -4,6 +4,7 @@
 
 Pshychocloud is a simple python-based conversation analyzer which aims to show the most used words from a person/group of (potentially) any chat service.
 This tool will analyze the input provided looking for each person involved in the conversation, identifying them, and creating a [word cloud]() not only for each of them but also for the whole conversation.
+Pshychocloud doesn't implements the wordcloud generation part. In order to achieve this, the following project was used: [wordcloud](https://github.com/amueller/word_cloud)
 
 So far, we support:
 
@@ -42,6 +43,8 @@ python analyze_text.py --help
 
 ## Future work
 
+* Filter stopwords in spanish
+* Filter special autogenerate messages depending on the Analyzer
 * Add output (and generate the directory if needed) for the graphs
 * Prepare the project as an egg
 * Create a directory with the output

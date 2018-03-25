@@ -1,5 +1,8 @@
 import re
 
+# Permissions
+ONLY_OWNER = 0700
+
 # General
 WHOLE_CONV = "whole_conversation"
 
