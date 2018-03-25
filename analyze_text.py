@@ -1,6 +1,6 @@
-from pshychocloud import Pshychocloud
+from pshychocloud.pshychocloud import Pshychocloud
 from argparse import ArgumentParser
-from constants import SUPPORTED_TYPES
+from pshychocloud.constants import SUPPORTED_TYPES
 
 
 if __name__ == "__main__":
