@@ -43,11 +43,9 @@ python analyze_text.py --help
 
 ## Future work
 
-* Filter stopwords in spanish
-* Filter special autogenerate messages depending on the Analyzer
-* Add output (and generate the directory if needed) for the graphs
+* Add exception handling
+* Add logging
 * Prepare the project as an egg
-* Create a directory with the output
 * Support new chat clients
 * Support multi lines mesages
 * Post analysis:

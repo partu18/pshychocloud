@@ -1,7 +1,7 @@
 from wordcloud import WordCloud
-from pshychocloud import Pshychocloud
-from auxiliaries import clean_line, remove_space_as_word
-from constants import WAPP_EXTRACT_PARTICIPANT_REGEX, WHATSAPP
+from pshychocloud.pshychocloud import Pshychocloud
+from pshychocloud.auxiliaries import clean_line, remove_space_as_word
+from pshychocloud.constants import WAPP_EXTRACT_PARTICIPANT_REGEX, WHATSAPP
 
 
 def test_wordcloud():

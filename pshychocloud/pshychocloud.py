@@ -6,7 +6,9 @@ class Pshychocloud(object):
     type_to_analyzer = {WHATSAPP:WAPPMessageAnalyzer}    
 
     def _read_file(self, _file):
-        return open(_file,'r').readlines()
+        with open(_file,'r') as f:
+            content = f.readlines()
+        return map(lambda line: line.lower(), content)
 
     def _get_analyzer(self, type_of_conv):
         return self.type_to_analyzer[type_of_conv]
@@ -14,6 +16,8 @@ class Pshychocloud(object):
     def _create_wordcloud(self, text, analyzer, participant=None):
         words = analyzer.get_words(text, participant)
         text_after_filtering_words = " ".join(words)
+        if len(text_after_filtering_words) == 0:
+            text_after_filtering_words = "EMPTY"
         return WordCloud().generate(text_after_filtering_words)
 
     def create_wordclouds(self, _file, type_of_conv):
