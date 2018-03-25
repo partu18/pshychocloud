@@ -1,0 +1,14 @@
+backports.functools-lru-cache==1.5
+cache==1.0.3
+cycler==0.10.0
+kiwisolver==1.0.1
+matplotlib==2.2.2
+numpy==1.14.2
+Pillow==5.0.0
+pkg-resources==0.0.0
+pyparsing==2.2.0
+python-dateutil==2.7.1
+pytz==2018.3
+six==1.11.0
+subprocess32==3.5.0rc1
+-e git+https://github.com/amueller/word_cloud.git@aa9b9d23b9abc6ccbb290b9395006e083f9c3575#egg=wordcloud
